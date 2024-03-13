@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-01-21 11:18:03.651663",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "estc_fecha",
+  "tbl_cliente",
+  "cliente_nombre",
+  "estc_plan",
+  "plan_nombre",
+  "estc_capital",
+  "plan_porcentaje",
+  "estc_valor",
+  "estc_detalle",
+  "estc_retirado",
+  "estc_detalle_html",
+  "naming_series",
+  "estc_eliminar",
+  "id_cliente_plan",
+  "id_bono"
+ ],
+ "fields": [
+  {
+   "fieldname": "estc_fecha",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estc_plan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plan",
+   "options": "tbl_plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estc_capital",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Capital",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estc_valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Valor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estc_detalle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Detalle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plan_porcentaje",
+   "fieldtype": "Float",
+   "label": "Porcentaje",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "estc_retirado",
+   "fieldtype": "Check",
+   "label": "Retirado",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tbl_cliente",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cliente",
+   "options": "tbl_cliente",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "estc_plan.plan_nombre",
+   "fieldname": "plan_nombre",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Plan"
+  },
+  {
+   "fieldname": "cliente_nombre",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Cliente"
+  },
+  {
+   "fieldname": "estc_detalle_html",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Detalle html"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "options": "EC-"
+  },
+  {
+   "default": "0",
+   "fieldname": "estc_eliminar",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Registros Eliminar"
+  },
+  {
+   "fieldname": "id_cliente_plan",
+   "fieldtype": "Data",
+   "label": "id_cliente_plan"
+  },
+  {
+   "fieldname": "id_bono",
+   "fieldtype": "Data",
+   "label": "id_bono"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-16 20:45:02.221045",
+ "modified_by": "Administrator",
+ "module": "mod_agenda",
+ "name": "tbl_estado_cuenta",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

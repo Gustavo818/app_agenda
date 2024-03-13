@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:registro",
+ "creation": "2023-08-31 16:59:39.269330",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "registro",
+  "section_break_0c1ud",
+  "fecha",
+  "column_break_uom8y",
+  "valores_por_reponer",
+  "section_break_upnms",
+  "tbl_auditoria_detalle",
+  "section_break_vb0tj",
+  "total_ingresos",
+  "column_break_yuqbq",
+  "total_egresos",
+  "column_break_dtdwa",
+  "saldo"
+ ],
+ "fields": [
+  {
+   "fieldname": "registro",
+   "fieldtype": "Data",
+   "label": "Registro",
+   "unique": 1
+  },
+  {
+   "fieldname": "total_ingresos",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Ingresos",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_egresos",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Egresos",
+   "read_only": 1
+  },
+  {
+   "fieldname": "saldo",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Saldo",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tbl_auditoria_detalle",
+   "fieldtype": "Table",
+   "options": "tbl_auditoria_detalle"
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "section_break_0c1ud",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_uom8y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "valores_por_reponer",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Valores Reponer"
+  },
+  {
+   "fieldname": "section_break_upnms",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_yuqbq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dtdwa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vb0tj",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-31 19:31:43.001998",
+ "modified_by": "Administrator",
+ "module": "mod_agenda",
+ "name": "tbl_auditoria",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EMPRESA",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

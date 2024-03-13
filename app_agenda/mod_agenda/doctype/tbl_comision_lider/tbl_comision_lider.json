@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-05-23 16:34:41.795099",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "registro_tab",
+  "naming_series",
+  "comi_fecha",
+  "tbl_cliente",
+  "tbl_comision_opciones",
+  "comi_comision",
+  "comi_fee",
+  "comi_disponible",
+  "transferencia_tab",
+  "comi_trans_pendiente",
+  "fecha",
+  "cli_billetera",
+  "cli_foto_transferencia"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "comi_fecha",
+   "fieldtype": "Date",
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "tbl_cliente",
+   "fieldtype": "Link",
+   "label": "Lider",
+   "options": "tbl_cliente"
+  },
+  {
+   "fieldname": "tbl_comision_opciones",
+   "fieldtype": "Link",
+   "label": "Detalle",
+   "options": "tbl_comision_opciones"
+  },
+  {
+   "default": "0",
+   "fieldname": "comi_comision",
+   "fieldtype": "Currency",
+   "label": "Comisi\u00f3n"
+  },
+  {
+   "default": "0",
+   "fieldname": "comi_fee",
+   "fieldtype": "Currency",
+   "label": "Fee"
+  },
+  {
+   "default": "0",
+   "fieldname": "comi_disponible",
+   "fieldtype": "Currency",
+   "label": "Disponible"
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "cli_billetera",
+   "fieldtype": "Data",
+   "label": "Billetera"
+  },
+  {
+   "fieldname": "registro_tab",
+   "fieldtype": "Tab Break",
+   "label": "Registro"
+  },
+  {
+   "fieldname": "transferencia_tab",
+   "fieldtype": "Tab Break",
+   "label": "Transferencia"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "options": "REG-COMIS-.YYYY.-",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "comi_trans_pendiente",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Transferencia Pendiente"
+  },
+  {
+   "fieldname": "cli_foto_transferencia",
+   "fieldtype": "Attach Image",
+   "label": "Foto Transferencia"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-08 19:51:22.543332",
+ "modified_by": "Administrator",
+ "module": "mod_agenda",
+ "name": "tbl_comision_lider",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

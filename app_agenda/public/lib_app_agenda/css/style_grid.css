@@ -1,0 +1,73 @@
+body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  h3 {
+    margin-top: 2rem;
+  }
+  
+  .row {
+    margin-bottom: 1rem;
+  }
+  .row .row {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  [class*="col-"] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* background-color: rgba(86,61,124,.15); */
+    border: 0px solid rgba(86,61,124,.2);
+  }
+  
+  hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .explainer{
+    color: #a5a5a5;
+    font-size: 0.8rem;
+    margin-bottom: 0px;
+  }
+  
+  .push-sm-6,
+  .push-xl-4,
+  .pull-sm-8
+  {
+    background-color: #98f8f1;
+  }
+  
+  .invisible-content {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  /* add width to element with .center-block because its default is 100% */
+  .my-cb {
+    width:200px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+  }
+  
+  /* start of modification for 5 columns */
+  @media (min-width: 768px){
+      .five-columns .col-md-2, .five-columns .col-sm-2, .five-columns .col-lg-2  {
+          width: 20%;
+      }
+  }
+  @media (min-width: 1200px) {
+      .five-columns .col-md-2, .five-columns .col-sm-2, .five-columns .col-lg-2 {
+          width: 20%;
+      }
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+      .five-columns .col-md-2, .five-columns .col-sm-2, .five-columns .col-lg-2 {
+          width: 20%;
+          float: left;
+      }
+  }
+  /* end of modification for 5 columns */

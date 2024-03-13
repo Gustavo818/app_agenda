@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-21 10:43:33.284569",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plad_capital"
+ ],
+ "fields": [
+  {
+   "fieldname": "plad_capital",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Capital",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-21 10:43:33.284569",
+ "modified_by": "Administrator",
+ "module": "mod_agenda",
+ "name": "tbls_plan_detalle",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

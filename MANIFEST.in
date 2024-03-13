@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include app_agenda *.css
+recursive-include app_agenda *.csv
+recursive-include app_agenda *.html
+recursive-include app_agenda *.ico
+recursive-include app_agenda *.js
+recursive-include app_agenda *.json
+recursive-include app_agenda *.md
+recursive-include app_agenda *.png
+recursive-include app_agenda *.py
+recursive-include app_agenda *.svg
+recursive-include app_agenda *.txt
+recursive-exclude app_agenda *.pyc

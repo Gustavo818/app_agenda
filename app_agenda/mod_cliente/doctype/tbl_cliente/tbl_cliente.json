@@ -1,0 +1,253 @@
+{
+ "actions": [],
+ "autoname": "field:x_naming_series",
+ "color": "red",
+ "creation": "2023-01-14 16:02:40.910011",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cli_activo",
+  "section_break_yore3",
+  "cli_dni",
+  "cli_apellidos",
+  "cli_nombres",
+  "cli_nombrecompleto",
+  "cli_usuario",
+  "column_break_6",
+  "cli_correo",
+  "cli_pais",
+  "cli_ciudad",
+  "cli_celular",
+  "cli_direccion",
+  "section_break_fkisf",
+  "cli_billetera",
+  "cli_correo_binance_pay",
+  "cli_apodo_binance_pay",
+  "column_break_14",
+  "cli_foto",
+  "cli_documento",
+  "x_naming_series",
+  "referido_section",
+  "cli_user_referencia",
+  "cli_foto_perfil",
+  "seguridad_tab",
+  "cli_password_new",
+  "cli_password_confi",
+  "column_break_hn8it",
+  "btm_actualizar"
+ ],
+ "fields": [
+  {
+   "fieldname": "cli_dni",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "C\u00e9dula / Pasaporte"
+  },
+  {
+   "fieldname": "cli_apellidos",
+   "fieldtype": "Data",
+   "label": "Apellidos"
+  },
+  {
+   "fieldname": "cli_nombres",
+   "fieldtype": "Data",
+   "label": "Nombres"
+  },
+  {
+   "fieldname": "cli_nombrecompleto",
+   "fieldtype": "Data",
+   "label": "Nombre Completo",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cli_usuario",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Usuario ( NICk )",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cli_correo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Correo",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "cli_pais",
+   "fieldtype": "Link",
+   "label": "Pais",
+   "options": "Country"
+  },
+  {
+   "fieldname": "cli_ciudad",
+   "fieldtype": "Data",
+   "label": "Ciudad"
+  },
+  {
+   "fieldname": "cli_celular",
+   "fieldtype": "Phone",
+   "label": "# Celular"
+  },
+  {
+   "fieldname": "cli_direccion",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n"
+  },
+  {
+   "fieldname": "cli_foto",
+   "fieldtype": "Attach Image",
+   "label": "Selfie"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Tab Break",
+   "label": "Fotos"
+  },
+  {
+   "fieldname": "cli_documento",
+   "fieldtype": "Attach",
+   "label": "Foto de Documento"
+  },
+  {
+   "default": "0",
+   "fieldname": "cli_activo",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Activo"
+  },
+  {
+   "fieldname": "section_break_yore3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_fkisf",
+   "fieldtype": "Tab Break",
+   "label": "Billetera"
+  },
+  {
+   "fieldname": "cli_billetera",
+   "fieldtype": "Data",
+   "label": "Billetera Cliente USDT Red (TRC 20)"
+  },
+  {
+   "fieldname": "referido_section",
+   "fieldtype": "Tab Break",
+   "label": "Referido por",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cli_user_referencia",
+   "fieldtype": "Data",
+   "label": "Nombre Usuario",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "x_naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "cli_foto_perfil",
+   "fieldtype": "Attach Image",
+   "label": "Foto Perfil"
+  },
+  {
+   "fieldname": "seguridad_tab",
+   "fieldtype": "Tab Break",
+   "label": "Seguridad"
+  },
+  {
+   "fieldname": "cli_password_new",
+   "fieldtype": "Data",
+   "label": "Nuevo Password"
+  },
+  {
+   "fieldname": "cli_password_confi",
+   "fieldtype": "Data",
+   "label": "Confirmar Password"
+  },
+  {
+   "description": "Actualizar Password",
+   "fieldname": "btm_actualizar",
+   "fieldtype": "Button",
+   "label": "Actualizar"
+  },
+  {
+   "fieldname": "column_break_hn8it",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cli_correo_binance_pay",
+   "fieldtype": "Data",
+   "label": "Binance Pay - Correo"
+  },
+  {
+   "fieldname": "cli_apodo_binance_pay",
+   "fieldtype": "Data",
+   "label": "Binance Pay - Apodo Registrado"
+  }
+ ],
+ "image_field": "cli_foto_perfil",
+ "links": [],
+ "modified": "2023-06-06 17:19:01.717203",
+ "modified_by": "Administrator",
+ "module": "mod_cliente",
+ "name": "tbl_cliente",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CLIENTE",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EMPRESA",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "cli_nombrecompleto"
+}

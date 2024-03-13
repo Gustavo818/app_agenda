@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-21 13:14:31.153686",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fer_fecha",
+  "fer_detalle"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "fer_fecha",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "fer_detalle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Detalle"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 13:17:10.954189",
+ "modified_by": "Administrator",
+ "module": "mod_agenda",
+ "name": "tbl_fecha_feriado_detalles",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

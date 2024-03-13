@@ -1,0 +1,129 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"dWQX-vtheu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Home\",\"col\":3}},{\"id\":\"KFFfQrmQkC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Men\u00fa Cliente</span>\",\"col\":12}},{\"id\":\"39ySE-1imo\",\"type\":\"card\",\"data\":{\"card_name\":\"Planes\",\"col\":4}},{\"id\":\"0aipjcjd1V\",\"type\":\"card\",\"data\":{\"card_name\":\"Mis datos\",\"col\":4}},{\"id\":\"DD4K5fjb3p\",\"type\":\"card\",\"data\":{\"card_name\":\"Estado de Cuenta\",\"col\":4}},{\"id\":\"5DoobbUHcX\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px;\\\"><b>M\u00e1s Servicios:</b></span><span class=\\\"h3\\\">Copy Trading, Pasar Cuentas de Fondeo, Trabajar Cuentas de Fondeo</span>\",\"col\":12}},{\"id\":\"97cgeSOhpP\",\"type\":\"card\",\"data\":{\"card_name\":\"Conozca\",\"col\":4}}]",
+ "creation": "2023-01-29 14:22:53.003136",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "image-view",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "menu_cliente",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Planes",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "pagina_planes",
+   "link_count": 0,
+   "link_to": "pagina_planes",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mis datos",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mis Datos",
+   "link_count": 0,
+   "link_to": "tbl_cliente",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "tbl_cliente_plan",
+   "link_count": 0,
+   "link_to": "tbl_cliente_plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Estado de Cuenta",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "pag_cliente",
+   "link_count": 0,
+   "link_to": "pag_cliente",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "pag_retiros",
+   "link_count": 0,
+   "link_to": "tbl_retiro",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Conozca",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "M\u00e1s Servicios",
+   "link_count": 0,
+   "link_to": "pag_trading",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-03-08 16:39:17.201381",
+ "modified_by": "Administrator",
+ "module": "mod_cliente",
+ "name": "menu_cliente",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Home",
+   "link_to": "pag_cliente",
+   "type": "Page"
+  }
+ ],
+ "title": "menu_cliente"
+}

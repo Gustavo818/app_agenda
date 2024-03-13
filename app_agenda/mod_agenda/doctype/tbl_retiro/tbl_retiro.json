@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:x_naming_series",
+ "creation": "2023-01-21 11:32:52.580049",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tbl_cliente",
+  "cli_billetera",
+  "reti_estado",
+  "id_cliente_plan",
+  "tbl_plan",
+  "reti_fecha_sol",
+  "reti_tipo_retiro",
+  "reti_fecha_re",
+  "reti_valor",
+  "x_naming_series",
+  "column_break_6bbeb",
+  "reti_aprobado_admin",
+  "procesar"
+ ],
+ "fields": [
+  {
+   "fieldname": "tbl_cliente",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cliente",
+   "options": "tbl_cliente",
+   "reqd": 1,
+   "width": "10"
+  },
+  {
+   "columns": 3,
+   "fieldname": "tbl_plan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Plan",
+   "options": "tbl_plan",
+   "reqd": 1,
+   "width": "20"
+  },
+  {
+   "fieldname": "reti_fecha_sol",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fecha de solcititud",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "reti_tipo_retiro",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tipo  de retiro",
+   "options": "CAPITAL\nINTERES",
+   "reqd": 1,
+   "width": "10"
+  },
+  {
+   "fieldname": "reti_fecha_re",
+   "fieldtype": "Date",
+   "label": "Fecha de retiro  "
+  },
+  {
+   "columns": 1,
+   "fieldname": "reti_valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "valor",
+   "reqd": 1,
+   "width": "15"
+  },
+  {
+   "columns": 1,
+   "default": "SOLICITADO",
+   "fieldname": "reti_estado",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Estado",
+   "options": "SOLICITADO\nAPROBADO",
+   "print_width": "0",
+   "width": "10"
+  },
+  {
+   "fieldname": "column_break_6bbeb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "procesar",
+   "fieldtype": "Button",
+   "label": "PROCESAR"
+  },
+  {
+   "default": "0",
+   "fieldname": "reti_aprobado_admin",
+   "fieldtype": "Check",
+   "label": "Aprobado por Administrador"
+  },
+  {
+   "fieldname": "id_cliente_plan",
+   "fieldtype": "Data",
+   "label": "id_cliente_plan"
+  },
+  {
+   "fieldname": "cli_billetera",
+   "fieldtype": "Data",
+   "label": "Billetera Cliente"
+  },
+  {
+   "fieldname": "x_naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "unique": 1,
+   "width": "15"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-12 17:25:41.351436",
+ "modified_by": "Administrator",
+ "module": "mod_agenda",
+ "name": "tbl_retiro",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EMPRESA",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CLIENTE",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

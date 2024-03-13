@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2023-01-29 14:30:44.085135",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-01-29 14:31:37.770795",
+ "modified_by": "Administrator",
+ "module": "mod_cliente",
+ "name": "redirect_cliente",
+ "owner": "Administrator",
+ "page_name": "redirect_cliente",
+ "roles": [
+  {
+   "role": "CLIENTE"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Cliente"
+}

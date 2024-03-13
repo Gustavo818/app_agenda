@@ -1,0 +1,248 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"cXVIvoXb49\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Men\u00fa Empresa</span>\",\"col\":12}},{\"id\":\"83brx_vfOE\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Clientes\",\"col\":4}},{\"id\":\"1Usx5K3AKn\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Accesos</b></span>\",\"col\":12}},{\"id\":\"Uu2aGdjdQp\",\"type\":\"card\",\"data\":{\"card_name\":\"Datos\",\"col\":4}},{\"id\":\"t_0I2BQaM1\",\"type\":\"card\",\"data\":{\"card_name\":\"Estado de Cuenta\",\"col\":4}},{\"id\":\"crliWAmswc\",\"type\":\"card\",\"data\":{\"card_name\":\"Auditoria\",\"col\":4}},{\"id\":\"TaI6H-k1nU\",\"type\":\"card\",\"data\":{\"card_name\":\"Comisiones\",\"col\":4}},{\"id\":\"HZOBSX-doe\",\"type\":\"card\",\"data\":{\"card_name\":\"Bono\",\"col\":4}},{\"id\":\"0SWjbxJ5KX\",\"type\":\"card\",\"data\":{\"card_name\":\"Feriados\",\"col\":4}},{\"id\":\"ovprJiJiPs\",\"type\":\"card\",\"data\":{\"card_name\":\"Noticias\",\"col\":4}},{\"id\":\"HBPkjJbrFT\",\"type\":\"card\",\"data\":{\"card_name\":\"Registro\",\"col\":4}},{\"id\":\"USya3d5WeB\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Configuraciones</b></span>\",\"col\":12}},{\"id\":\"tmKcy7uP3-\",\"type\":\"card\",\"data\":{\"card_name\":\"Par\u00e1metros\",\"col\":4}}]",
+ "creation": "2024-03-06 17:12:54.664094",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-energy-points",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "menu_empresa",
+ "links": [
+  {
+   "description": "Par\u00e1metros",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Par\u00e1metros",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Planes",
+   "link_count": 0,
+   "link_to": "tbl_plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "description": "Datos",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Datos",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cliente",
+   "link_count": 0,
+   "link_to": "tbl_cliente",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cliente - Plan",
+   "link_count": 0,
+   "link_to": "tbl_cliente_plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Auditoria",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "pag_auditoria",
+   "link_count": 0,
+   "link_to": "tbl_auditoria",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Comisiones",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "pag_comisiones",
+   "link_count": 0,
+   "link_to": "tbl_comision_lider",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "pag_comision_opciones",
+   "link_count": 0,
+   "link_to": "tbl_comision_opciones",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bono",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "bono_cliente_plan",
+   "link_count": 0,
+   "link_to": "bono_cliente_plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Estado de Cuenta",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "pagina_cliente",
+   "link_count": 0,
+   "link_to": "pag_cliente",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "pag_retiro",
+   "link_count": 0,
+   "link_to": "tbl_retiro",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "tbl_estado_cuenta",
+   "link_count": 0,
+   "link_to": "tbl_estado_cuenta",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Feriados",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "tbl_fecha_feriado",
+   "link_count": 0,
+   "link_to": "tbl_fecha_feriado",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Noticias",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "tbl_noticias",
+   "link_count": 0,
+   "link_to": "tbl_noticias",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Registro",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "tbl_registro",
+   "link_count": 0,
+   "link_to": "tbl_registro",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-03-09 22:13:33.707199",
+ "modified_by": "Administrator",
+ "module": "mod_agenda",
+ "name": "menu_empresa",
+ "number_cards": [
+  {
+   "label": "Clientes",
+   "number_card_name": "Registro Clientes"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "menu_empresa"
+}

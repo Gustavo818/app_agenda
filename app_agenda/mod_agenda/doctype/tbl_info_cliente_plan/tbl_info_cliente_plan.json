@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-04-18 12:03:24.500616",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "cliente",
+  "column_break_9haqe",
+  "plan",
+  "section_break_qcmzk",
+  "cliplan_capital",
+  "column_break_vb7hx",
+  "cliplan_fecha_ini",
+  "column_break_ahhqd",
+  "cliplan_fecha_retmin",
+  "column_break_h67wc",
+  "cli_billetera",
+  "section_break_iohzv",
+  "datos_roi",
+  "update_plan",
+  "interes_ganado",
+  "column_break_flj26",
+  "lista_referidos",
+  "adicionar_bono_a_plan_section",
+  "fecha_registro",
+  "column_break_56ith",
+  "valor_capital",
+  "column_break_hbobc",
+  "valor_porcentaje",
+  "column_break_zonwk",
+  "valor_bono"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "options": "INFO-.YYYY.-",
+   "unique": 1
+  },
+  {
+   "fieldname": "cliente",
+   "fieldtype": "Link",
+   "label": "Cliente",
+   "options": "tbl_cliente"
+  },
+  {
+   "fieldname": "column_break_9haqe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Seleccione Plan",
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "label": "Plan",
+   "options": "tbl_plan"
+  },
+  {
+   "fieldname": "section_break_qcmzk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cliplan_capital",
+   "fieldtype": "Currency",
+   "label": "Capital"
+  },
+  {
+   "fieldname": "column_break_vb7hx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cliplan_fecha_ini",
+   "fieldtype": "Date",
+   "label": "Fecha Inicio"
+  },
+  {
+   "fieldname": "column_break_ahhqd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cliplan_fecha_retmin",
+   "fieldtype": "Date",
+   "label": "Fecha Retiro"
+  },
+  {
+   "fieldname": "column_break_h67wc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cli_billetera",
+   "fieldtype": "Data",
+   "label": "Billetera"
+  },
+  {
+   "fieldname": "section_break_iohzv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "datos_roi",
+   "fieldtype": "Small Text",
+   "label": "Datos Roi"
+  },
+  {
+   "fieldname": "update_plan",
+   "fieldtype": "Button",
+   "label": "Actualizar"
+  },
+  {
+   "default": "0",
+   "fieldname": "interes_ganado",
+   "fieldtype": "Currency",
+   "label": "Inter\u00e9s Ganado"
+  },
+  {
+   "fieldname": "column_break_flj26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lista_referidos",
+   "fieldtype": "Small Text",
+   "label": "Lista de Referidos",
+   "options": "Ninguno"
+  },
+  {
+   "fieldname": "adicionar_bono_a_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Informaci\u00f3n Bono Plan"
+  },
+  {
+   "fieldname": "fecha_registro",
+   "fieldtype": "Date",
+   "label": "Fecha Registro"
+  },
+  {
+   "fieldname": "column_break_56ith",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "valor_capital",
+   "fieldtype": "Currency",
+   "label": "Capital Referido"
+  },
+  {
+   "fieldname": "column_break_hbobc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "valor_porcentaje",
+   "fieldtype": "Currency",
+   "label": "Porcentaje Capital"
+  },
+  {
+   "fieldname": "column_break_zonwk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "valor_bono",
+   "fieldtype": "Currency",
+   "label": "Valor Bono"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-18 22:16:05.261325",
+ "modified_by": "Administrator",
+ "module": "mod_agenda",
+ "name": "tbl_info_cliente_plan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

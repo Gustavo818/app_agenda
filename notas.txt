@@ -1,0 +1,5 @@
+estado de las solicitudes
+SOLICITADO => Cuando se haga la solicitud
+ARCHIVADO => Cuando retiren todo el dinero
+CAPITAL RETIRADO => Cuando retiren todo el dinero
+APROBADO

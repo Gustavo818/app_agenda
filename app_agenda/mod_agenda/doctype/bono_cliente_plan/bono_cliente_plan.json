@@ -1,0 +1,251 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2023-04-14 23:31:22.599634",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "cliente",
+  "column_break_manu6",
+  "plan",
+  "seccion_plan",
+  "cliplan_capital",
+  "column_break_dasz5",
+  "cliplan_fecha_ini",
+  "section_break_scjmz",
+  "cliplan_fecha_retmin",
+  "section_break_guplv",
+  "cli_billetera",
+  "seccion_roi",
+  "datos_roi",
+  "update_plan",
+  "interes_ganado",
+  "column_break_1fjhh",
+  "lista_referidos",
+  "adicionar_bono_a_plan_section",
+  "fecha_registro",
+  "section_break_v4lvl",
+  "valor_capital",
+  "column_break_kmtg9",
+  "valor_porcentaje",
+  "column_break_j02bs",
+  "valor_bono",
+  "section_break_b4vkb",
+  "add_column",
+  "add_bono",
+  "delete_section",
+  "delete_bono",
+  "column_break_8tm6u",
+  "bono_archivar"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "label": "Agregar Bono en Plan",
+   "options": "tbl_plan"
+  },
+  {
+   "fieldname": "cliente",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cliente",
+   "options": "tbl_cliente",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "options": "BONO-.YYYY.-",
+   "unique": 1
+  },
+  {
+   "fieldname": "seccion_plan",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "seccion_roi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "interes_ganado",
+   "fieldtype": "Currency",
+   "label": "Inter\u00e9s Ganado"
+  },
+  {
+   "fieldname": "column_break_manu6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cliplan_capital",
+   "fieldtype": "Currency",
+   "label": "Capital"
+  },
+  {
+   "fieldname": "column_break_dasz5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cliplan_fecha_ini",
+   "fieldtype": "Date",
+   "label": "Fecha Inicio"
+  },
+  {
+   "fieldname": "cliplan_fecha_retmin",
+   "fieldtype": "Date",
+   "label": "Fecha Retiro"
+  },
+  {
+   "fieldname": "cli_billetera",
+   "fieldtype": "Data",
+   "label": "Billetera"
+  },
+  {
+   "fieldname": "section_break_scjmz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_guplv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "adicionar_bono_a_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Informaci\u00f3n Bono Plan"
+  },
+  {
+   "default": "0",
+   "fieldname": "valor_bono",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Valor Bono"
+  },
+  {
+   "fieldname": "section_break_v4lvl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "fecha_registro",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha Registro"
+  },
+  {
+   "default": "0.5",
+   "fieldname": "valor_porcentaje",
+   "fieldtype": "Currency",
+   "label": "Porcentaje de Capital"
+  },
+  {
+   "fieldname": "column_break_j02bs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_b4vkb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "add_column",
+   "fieldtype": "Column Break",
+   "label": "Add"
+  },
+  {
+   "fieldname": "add_bono",
+   "fieldtype": "Button",
+   "label": "Agregar Bono"
+  },
+  {
+   "fieldname": "delete_section",
+   "fieldtype": "Column Break",
+   "label": "Delete"
+  },
+  {
+   "fieldname": "delete_bono",
+   "fieldtype": "Button",
+   "label": "Eliminar Bono"
+  },
+  {
+   "fieldname": "datos_roi",
+   "fieldtype": "Small Text",
+   "label": "Datos Roi"
+  },
+  {
+   "fieldname": "update_plan",
+   "fieldtype": "Button",
+   "label": "Actualizar"
+  },
+  {
+   "fieldname": "valor_capital",
+   "fieldtype": "Currency",
+   "label": "Capital Referido"
+  },
+  {
+   "fieldname": "column_break_kmtg9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_1fjhh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lista_referidos",
+   "fieldtype": "Small Text",
+   "label": "Lista de Referidos"
+  },
+  {
+   "fieldname": "column_break_8tm6u",
+   "fieldtype": "Column Break",
+   "label": "Registro Actual"
+  },
+  {
+   "default": "0",
+   "fieldname": "bono_archivar",
+   "fieldtype": "Check",
+   "label": "Archivar"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-18 09:31:56.211117",
+ "modified_by": "Administrator",
+ "module": "mod_agenda",
+ "name": "bono_cliente_plan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EMPRESA",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

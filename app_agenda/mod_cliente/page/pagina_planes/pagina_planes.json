@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2023-01-21 15:49:56.234806",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-01-21 15:50:16.093510",
+ "modified_by": "Administrator",
+ "module": "mod_cliente",
+ "name": "pagina_planes",
+ "owner": "Administrator",
+ "page_name": "pagina_planes",
+ "roles": [
+  {
+   "role": "CLIENTE"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Planes"
+}

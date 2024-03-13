@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-01-21 10:40:42.330589",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_activo",
+  "section_break_qeogm",
+  "naming_series",
+  "plan_nombre",
+  "plan_rendimiento",
+  "plan_porcentaje",
+  "plan_dias_retiro",
+  "tbls_plan_detalle",
+  "plan_imagen",
+  "plan_detalle1",
+  "plan_detalle2",
+  "plan_detalle3"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "options": "PLAN-"
+  },
+  {
+   "fieldname": "plan_nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plan_rendimiento",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rendimiento",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tbls_plan_detalle",
+   "fieldtype": "Table",
+   "label": "Detalle de Capital",
+   "options": "tbls_plan_detalle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plan_dias_retiro",
+   "fieldtype": "Int",
+   "label": "Dias para retirar"
+  },
+  {
+   "fieldname": "plan_porcentaje",
+   "fieldtype": "Data",
+   "label": "% de inter\u00e9s"
+  },
+  {
+   "fieldname": "plan_imagen",
+   "fieldtype": "Attach Image",
+   "label": "Imagen"
+  },
+  {
+   "fieldname": "plan_detalle1",
+   "fieldtype": "Data",
+   "label": "Detalle1"
+  },
+  {
+   "fieldname": "plan_detalle2",
+   "fieldtype": "Data",
+   "label": "Detalle2"
+  },
+  {
+   "fieldname": "plan_detalle3",
+   "fieldtype": "Data",
+   "label": "Detalle3"
+  },
+  {
+   "default": "True",
+   "fieldname": "plan_activo",
+   "fieldtype": "Check",
+   "label": "Activo"
+  },
+  {
+   "fieldname": "section_break_qeogm",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "image_field": "plan_imagen",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-11 09:53:10.064584",
+ "modified_by": "Administrator",
+ "module": "mod_agenda",
+ "name": "tbl_plan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CLIENTE",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EMPRESA",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "plan_nombre"
+}

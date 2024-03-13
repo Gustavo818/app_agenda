@@ -1,0 +1,168 @@
+
+{%  extends "templates/web.html" %}
+
+{% block title %}{{ _("About Us") }}{% endblock %}
+
+ 
+{% block page_content %}
+ 
+
+
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-6"> 
+        
+
+        <div class="form-group">
+
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <center>
+                    <img src="/assets/app_agenda/lib_app_agenda/img/intro/logo_italfox_g.png" width="230" height="100" top="0" 
+                        alt="">
+                    <hr>
+                </center>
+                    <h5>Ingrese los datos solicitados, para registarse en el sistema</h5>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <label for="txtcorreo" class="control-label   small ">Correo Electrónico</label>
+                    <input value="" class="form-control" type="text" id="txtcorreo" placeholder="correo" name="txtcorreo"
+                        required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <label for="txtnombre" class="control-label   small ">Nombre de Usuario</label>
+                    <input value="" class="form-control" type="text" id="txtnombre" name="txtnombre" placeholder="Usuario">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <label for="txtuserref" class="control-label   small ">Agente Encargado ( Nick ) Quién lo invito</label>
+                    <input value="" class="form-control" type="text" id="txtuserref" name="txtuserref"
+                        placeholder="Nick - Opcional">
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div>
+            <p></p>
+            <button type="Submit" id="register_member" class="btn btn-primary">
+                Registrarse</button>
+        </div>
+
+
+        <br>
+        <div>
+            Nos complace darle la bienvenida a Italfox. Como parte valiosa del equipo esperamos que compartas nuestros objetivos en pro del éxito financiero de cada usuario participante.
+        </div>
+
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-6" > 
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+        <img src="/assets/app_agenda/lib_app_agenda/img/img_inicio.png" class="img-responsive center-block"
+        alt="">
+        </center>
+    </div>
+</div>
+
+
+
+
+ 
+
+
+ <script>
+    frappe.ready(function () {
+
+        $("#register_member").click(function () {
+            registrar();
+        });
+
+        // let queryString = frappe.utils.get_url_arg('userref')
+        // $("#txtuserref").val(queryString);
+        // console.log(queryString);
+
+    });
+let xx;
+    function registrar() {
+      
+        let correo = $("#txtcorreo").val();
+        let nombre = $("#txtnombre").val();
+        let cuenta = '';// $("#txtCuenta").val();
+        let userref = $("#txtuserref").val();
+        if (correo === undefined || correo === null || correo === "") {
+            frappe.msgprint("El  correo electrónico es requerido");
+            return;
+        }
+        if (nombre === undefined || nombre === null || nombre === "") {
+            frappe.msgprint("El  nombre es requerido");
+            return;
+        }
+       /* if (cuenta === undefined || cuenta === null || cuenta === "") {
+            frappe.msgprint("El campo número de cuenta es requerido");
+            return;
+        }*/
+        if (frappe.utils.validate_type(correo, "email") == false) {
+            frappe.msgprint("El  correo electrónico no es válido");
+            return;
+            
+        }
+       
+       frappe.show_progress('Creando Cuenta..', 100, 100, 'Por favor espere');
+        frappe.call({
+      method: "app_agenda.www.signup.register_member",
+       freeze: true,
+      freeze_message: "Creando la Cuenta",
+      async: true, 
+            args: {
+                incorreo: correo,
+                innombre: nombre,
+                incuenta: cuenta,
+                inuserref: userref
+            },
+            callback: (r) => {
+                this.xx =100;
+                let data = r.message;
+                if (data.cli_correo) {
+                    let vmessage= 'Su cuenta ha sido creada con éxito,  En los próximos minutos le llegara un correo con la contraseña de acceso al sistema  '
+                    frappe.msgprint(vmessage);
+                    window.location.href = "https://italfox.com/login";
+                  /*  frappe.msgprint({
+					title: __('Notificación'),
+					indicator: 'green',
+                      primary_action:{
+        action(values) {
+            
+        }},
+					message:  vmessage
+				}); 
+                */                   
+                } else {
+                    frappe.msgprint(data.message);
+                  
+                }
+            },
+
+
+        });
+
+    }
+</script>
+
+ {% endblock %}

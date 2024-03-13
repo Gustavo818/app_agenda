@@ -1,0 +1,24 @@
+{
+ "content": null,
+ "creation": "2023-04-21 21:47:12.182236",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "",
+ "idx": 0,
+ "modified": "2023-04-25 01:25:04.575475",
+ "modified_by": "Administrator",
+ "module": "mod_cliente",
+ "name": "pag_trading2",
+ "owner": "Administrator",
+ "page_name": "pag_trading2",
+ "roles": [
+  {
+   "role": "CLIENTE"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "pag_trading"
+}

@@ -1,0 +1,237 @@
+{
+ "actions": [],
+ "autoname": "field:x_naming_series",
+ "creation": "2023-01-21 10:53:18.488797",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cliplan_activo",
+  "section_break_6nyhr",
+  "titulo",
+  "section_break_2",
+  "x_naming_series",
+  "cliplan_estado",
+  "tbl_cliente",
+  "tbl_plan",
+  "plan_nombre",
+  "cliplan_capital",
+  "cliplan_rendimiento",
+  "cliplan_porcentaje",
+  "column_break_6",
+  "cliplan_fecha_sol",
+  "cliplan_fecha_con",
+  "cliplan_fecha_ini",
+  "cliplan_fecha_retmin",
+  "dinero",
+  "cliplan_fecha_utimogenerado",
+  "section_break_y0hc5",
+  "cliplan_foto",
+  "column_break_thq6l",
+  "id_hash",
+  "section_break_lzk39",
+  "cliplan_con_referido"
+ ],
+ "fields": [
+  {
+   "fieldname": "tbl_cliente",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cliente",
+   "options": "tbl_cliente",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "tbl_plan",
+   "fieldtype": "Link",
+   "label": "Plan",
+   "options": "tbl_plan",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "cliplan_capital",
+   "fieldtype": "Currency",
+   "label": "Capital",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "cliplan_rendimiento",
+   "fieldtype": "Currency",
+   "label": "Rendimiento",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "cliplan_fecha_sol",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha de solicitud",
+   "set_only_once": 1
+  },
+  {
+   "description": "Esta informaci\u00f3n solo se puede asignar una sola vez  ",
+   "fieldname": "cliplan_fecha_con",
+   "fieldtype": "Date",
+   "label": "Fecha de confirmaci\u00f3n"
+  },
+  {
+   "description": "Esta informaci\u00f3n solo se puede asignar una sola vez  ",
+   "fieldname": "cliplan_fecha_ini",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha inicio del plan "
+  },
+  {
+   "fieldname": "cliplan_fecha_retmin",
+   "fieldtype": "Date",
+   "label": "Fecha para iniciar retiro",
+   "read_only": 1
+  },
+  {
+   "default": "SOLICITADO",
+   "fieldname": "cliplan_estado",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Estado",
+   "options": "SOLICITADO\nAPROBADO\nRECHAZADO",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "tbl_plan.plan_nombre",
+   "fieldname": "plan_nombre",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Plan"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "titulo",
+   "fieldtype": "HTML",
+   "options": "<font style=\"color: #F52F4A; font-size: 24px;\"><b>Para aprobar la solicitud debe asignar las fecha de confirmaci\u00f3n y de inicio del plan   <b>\n</b></b></font>"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "tbl_plan.plan_dias_retiro",
+   "fieldname": "dinero",
+   "fieldtype": "Section Break",
+   "label": "Dias para retiro"
+  },
+  {
+   "fetch_from": "tbl_plan.plan_porcentaje",
+   "fieldname": "cliplan_porcentaje",
+   "fieldtype": "Float",
+   "label": "% de inter\u00e9s",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cliplan_fecha_utimogenerado",
+   "fieldtype": "Date",
+   "hidden": 1
+  },
+  {
+   "fieldname": "section_break_6nyhr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "cliplan_activo",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Activo"
+  },
+  {
+   "fieldname": "cliplan_foto",
+   "fieldtype": "Attach Image",
+   "label": "Dep\u00f3sito"
+  },
+  {
+   "fieldname": "section_break_y0hc5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "x_naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_lzk39",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cliplan_con_referido",
+   "fieldtype": "Check",
+   "label": "Con Referido"
+  },
+  {
+   "fieldname": "id_hash",
+   "fieldtype": "Data",
+   "label": "id Hash",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_thq6l",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-31 14:45:16.417347",
+ "modified_by": "Administrator",
+ "module": "mod_agenda",
+ "name": "tbl_cliente_plan",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EMPRESA",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CLIENTE",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "plan_nombre"
+}
